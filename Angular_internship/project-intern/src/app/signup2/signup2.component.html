@@ -1,0 +1,57 @@
+<!--    SignUp -2 -->
+<div class="flex flex-row min-h-screen justify-center items-center w-[1576px] h-[1003px] top-[-301px] left-[-10783] bg-[#0054B3] bg-opacity-15">
+
+    <!-- <a href="/src/app/sign-up/sign-up.component.html" style="text-decoration: none;" class="w-[74px] h-[24px] top-[29px] left-[547px] relative ">Go Back</a> -->
+
+    <div class="flex w-[752px] h-[752px] top-[193px] left-[-301px] absolute bg-[#0054B3] blur-[100px] bg-opacity-40">
+        <!-- bg-gradient-to-r from-[#0054B3] to-white -->
+    </div>
+    <div class=" flex w-[752px] h-[752px] top-[-169px] left-[701px] bg-[#0054B3] absolute blur-[100px] bg-opacity-40">
+
+    </div>
+
+    <div class="flex flex-row min-h-screen w-[1051px] h-[676px] top-[149px] left-[158px] border rounded-[16px] justify-center items-center z-40 bg-[#F5F5F5] ">
+        <div class="w-[442px] h-[676px] ml-[-188px] bg-[#1994FF] border rounded-l-[16px] bg-opacity-[12%] bg-[url('assets/images/image.png')] bg-contain bg-no-repeat">
+        </div>
+
+
+        <!-- Create Account box-->
+        <div class="w-[333px] h-[550px] top-[87px] left-[517px] gap-[24px] ml-[90px] ">
+            <h1 class="Poppins w-[600px] h-[30px] size-[20px] text-[23px] font-semibold mb-4 ">Create Account</h1>
+            <div class="flex w-[332px] h-[8px] gap-[4px] mb-3 ">
+                <div class="flex-initial w-[165px] h-[8px] border rounded-[215px] bg-[#0069D1] "> </div>
+                <div class="flex-initial w-[165px] h-[8px] border rounded-[215px] bg-[#0069D1] "> </div>
+            </div>
+            <form [formGroup]="signup2Form">
+                <div class="w-[333px] h-[66px] gap-[4px] mb-4 ">
+                    <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">Organisation-name</label>
+                    <input formControlName="Email" type="email " class="w-[333px] h-[44px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Loremipsum@gmail.com ">
+                </div>
+                <div class="w-[333px] h-[60px] gap-[4px] mb-4 ">
+                    <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">Organisation-id</label>
+                    <input formControlName="Full_Name" type="text" class="w-[333px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Full name ">
+                </div>
+                <div class="w-[333px] h-[60px] gap-[4px] mb-4 ">
+                    <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">Designation</label>
+                    <input formControlName="password" type="text" class="w-[333px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Password ">
+                </div>
+                <div class="w-[333px] h-[60px] gap-[4px] mb-4 ">
+                    <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">Birth-date</label>
+                    <input formControlName="Birth_date" type="date" class="w-[333px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Birth-date">
+                </div>
+                <div class="flex flex-row mb-4">
+                    <div class="w-[143px] h-[60px] gap-[4px] mr-10">
+                        <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">City</label>
+                        <input formControlName="City" type="text" class="w-[150px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[20px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="City ">
+                    </div>
+                    <div class="w-[143px] h-[60px] gap-[4px] ">
+                        <label for="exampleFormControlInput1 " class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold ">Pincode</label>
+                        <input formControlName="Pincode" type="text" class="w-[150px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[20px] pl-[16px] text-[#767676] bg-[#E4ECEE]" id="exampleFormControlInput1 " placeholder="Pincode ">
+                    </div>
+                </div>
+                <button class="w-[332px] h-[38px] border rounded-[16px] gap-[10px] p-[10px] text-[#F5F5F5] bg-[#0069D1] font-semibold text-xs" (click)="onContinue()">Next</button>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="flex flex-row min-h-screen justify-center items-center w-[1466px] h-[1003px] top-[-301px] left-[-10783] bg-[#0054B3] bg-opacity-15">
+    <div class="flex w-[752px] h-[752px] top-[193px] left-[-301px] absolute bg-[#0054B3] blur-[100px] bg-opacity-40">
+        <!-- bg-gradient-to-r from-[#0054B3] to-white -->
+    </div>
+    <div class=" flex w-[752px] h-[752px] top-[-169px] left-[701px] bg-[#0054B3] absolute blur-[100px] bg-opacity-40">
+
+    </div>
+
+    <div class="flex flex-row min-h-screen w-[1051px] h-[604px] top-[149px] left-[158px] border rounded-[16px] justify-center items-center z-40 bg-[#F5F5F5] border-white">
+        <div class="w-[442px] h-[604px] ml-[-188px] bg-[#1994FF] border rounded-l-[16px] bg-opacity-[12%] bg-[url('assets/images/image.png')] bg-contain bg-no-repeat">
+        </div>
+        <!-- Create Account box-->
+        <div class="w-[333px] h-[266px] top-[181px] left-[517px] gap-[24px] ml-[90px] ">
+            <h1 class="Poppins w-[600px] h-[30px] size-[20px] text-[23px] font-semibold mb-4 text-[#2D2D36]">Welcome Back, John!</h1>
+            <!-- <div class="flex w-[332px] h-[8px] gap-[4px] mb-3 ">
+                <div class="flex-initial w-[165px] h-[8px] border rounded-[215px] bg-[#0069D1] "> </div>
+                <div class="flex-initial w-[165px] h-[8px] border rounded-[215px] bg-[#CFD0D4] "> </div>
+            </div> -->
+            <form [formGroup]="LoginForm">
+                <div class="w-[333px] h-[66px] gap-[4px] mb-10 ">
+                    <label for="Email" class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold mb-3">Enter Email ID</label>
+                    <input formControlName="Email" type="email " class="w-[333px] h-[44px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Loremipsum@gmail.com ">
+                </div>
+                <div class="w-[333px] h-[60px] gap-[4px] mb-10 ">
+                    <label for="password" class="w-[600px] h-[18px] text-[#0069D1] size-[12px] font-semibold mb-3">Enter Password</label>
+                    <input formControlName="password" type="password" class="w-[333px] h-[38px] border rounded-[16px] gap-[10px] pt-[10px] pb-[10px] pr-[96px] pl-[16px] text-[#767676] bg-[#E4ECEE] " id="exampleFormControlInput1 " placeholder="Password ">
+                </div>
+                <!-- Password Validation  -->
+                <div class="text-[#DB3F27] w-[600px] size-[12px] mb-[30px]" *ngIf="LoginForm.controls['password'].invalid && (LoginForm.controls['password'].touched || LoginForm.controls['password'].dirty)">Incorrect password. Please try again</div>
+
+                <button type="submit" class="w-[332px] h-[38px] border rounded-[16px] gap-[10px] p-[10px] text-[#F5F5F5] bg-[#0069D1] font-semibold text-xs" (click)="onContinue()">Next</button>
+            </form>
+        </div>
+    </div>
+</div>
